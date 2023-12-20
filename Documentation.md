@@ -9,7 +9,7 @@ Para implementar los modelos en la aplicación web que es capaz de servir de her
 
 ## Asignación entidad territorial
 
-Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar (@voronoi). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
+Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar (#voronoi). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
 
 <figure>
   <img
