@@ -23,7 +23,7 @@ Tanto para asignar a que cluster pertenece la parcela asignada, asi como para mo
 
 ## Modelo asignación de cluster
 
-Una vez se asigna la zona de influencia a la que pertence la parcela, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se ajustó un modelo de asignación. Para construir este modelo se empleó el algorítmo de machine learning XGBoost, que consiguió una precisión del 90%. Una vz que se asigna un cluster 
+Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se ajustó un modelo de asignación. Para construir este modelo se empleó el algorítmo de machine learning XGBoost, que consiguió una precisión del 90% y cuyas importancias de las variables en forma de SHAP values se encuentran en la Figura 2. Una vez que se asigna un cluster se le aplia el modelo de estimación de la producción correspondiente.
 
 <figure>
   <img
@@ -36,7 +36,7 @@ Una vez se asigna la zona de influencia a la que pertence la parcela, se debe de
 
 ## Implementación informática
 
-
+En la Figura 3 se pude obserevar el diagrama de funcionamiento de la apliación web. Para construirla se empleó un servidor Shiny basado en el lenguaje de R.
 
 <figure>
   <img
@@ -47,7 +47,7 @@ Una vez se asigna la zona de influencia a la que pertence la parcela, se debe de
   </figcaption>
 </figure>
 
-
+En la Figura 4 se puede ver la portada 
 
 <figure>
   <img
