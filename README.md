@@ -1,6 +1,6 @@
 # RESIM
 
-En este repositorio se encuentra el proceso llevado a cabo para implementar la metodología de estimación de resina bietápica propuesta en la aplicación web [RESIM](http://resim.proepla.com). Se trata de una aplicación accesible de forma libre y que permite a cualquire usuario hacer uso de ella.
+En este repositorio se encuentra el proceso llevado a cabo para implementar la metodología de estimación de resina bietápica en la aplicación web [RESIM](http://resim.proepla.com). Se trata de una aplicación accesible de forma libre y que permite a cualquire usuario hacer uso de ella.
 
 ## Documentos
 
