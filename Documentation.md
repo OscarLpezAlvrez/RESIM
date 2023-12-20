@@ -9,14 +9,13 @@ Para implementar los modelos en la aplicación web que es capaz de servir de her
 
 ## Asignación entidad territorial
 
-Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parela indicada. El noroeste penin 
+Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar. Por lo tanto se asigna una zona de influenia a partir de su pertencia a uno o a otro polígono.
 
-![voronois_zona_estudio](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/02b626a5-29f8-4eb2-b409-947e99843f7e)
+![Polígonos de Voronoi de la zona de influenia del estudio](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/02b626a5-29f8-4eb2-b409-947e99843f7e)
 
 ## Modelo asignación de cluster
 
-
-
+Una vez se asigna la zona de influencia a la que pertence la parcela, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se ajustó un modelo de asignación de cluster. Para construir este modelo se empleó el algorítmo de machine learning XGBoost, este algoritmo consiguió una precisión clasificando la pertenencia a los cluster del 90%.
 
 ![cluster_shap_no_produccion](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/f76d7939-595f-4acc-bb9d-0e1b689f9751)
 
