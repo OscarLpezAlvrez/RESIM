@@ -9,7 +9,7 @@ Para implementar los modelos en la aplicación web que es capaz de servir de her
 
 ## Asignación entidad territorial
 
-Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar (#voronoi). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
+Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar (Figure 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
 
 <figure>
   <img
@@ -17,7 +17,7 @@ Tanto para asignar a que cluster pertenece la parcela asignada, asi como para mo
     alt="voronoi"
     >
   <figcaption>
-    Voronoi polygons of the area of influence of the study. Green area is the distribution range zone delimited by Caudullo et al. (2017).
+    Figure 1. Voronoi polygons of the area of influence of the study. Green area is the distribution range zone delimited by Caudullo et al. (2017).
   </figcaption>
 </figure>
 
@@ -30,18 +30,33 @@ Una vez se asigna la zona de influencia a la que pertence la parcela, se debe de
     src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/f76d7939-595f-4acc-bb9d-0e1b689f9751"
     >
   <figcaption>
-    SHAP values de las variables empleadas en el modelo de clasificación.
+    Figure 2. SHAP values de las variables empleadas en el modelo de clasificación.
   </figcaption>
 </figure>
 
 ## Implementación informática
 
 
-![esquema](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/27d1716c-4aab-4910-8016-45cb0e6ea134)
+
+<figure>
+  <img
+    src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/27d1716c-4aab-4910-8016-45cb0e6ea134"
+    >
+  <figcaption>
+    Figure 3. Diagrama de funcionamiento de la aplicación.
+  </figcaption>
+</figure>
 
 
-![aplicacion](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/dae901b9-7c0e-47b4-baa6-20c0565057e7)
 
+<figure>
+  <img
+    src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/dae901b9-7c0e-47b4-baa6-20c0565057e7"
+    >
+  <figcaption>
+    Figure 4. Vista de la aplicación RESIM.
+  </figcaption>
+</figure>
 
 ## References
 
