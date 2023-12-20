@@ -14,8 +14,7 @@ Tanto para asignar a que cluster pertenece la parcela asignada, asi como para mo
 
 <figure>
   <img
-    srcc="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/02b626a5-29f8-4eb2-b409-947e99843f7e"
-    alt="voronoi"
+    src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/02b626a5-29f8-4eb2-b409-947e99843f7e"
     >
   <figcaption>
     Polígonos de Voronoi de la zona de influenia del estudio
