@@ -23,7 +23,7 @@ Tanto para asignar a que cluster pertenece la parcela asignada, asi como para mo
 </figure>
 
 
-![voronoi](https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/02b626a5-29f8-4eb2-b409-947e99843f7e "Polígonos de Voronoi de la zona de influenia del estudio")
+
 
 ## Modelo asignación de cluster
 
