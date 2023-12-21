@@ -47,7 +47,7 @@ Tras asignar a que cluster pernecen los datos informáticos se realizó la imple
   </figcaption>
 </figure>
 
-                    
+------------
     
 En la Figura 4 se puede ver una captura de la página principal de la aplicación. Esta posee un visor en el que seleccionar la parcela, un selector con los métodos y pastas y una caja en la que ir introduciendo los diferente datos dasométricos de los árboles de la parcela. Estos resultados se pueden visualizar en pantalla, imprimir o exportar a csv.
 
