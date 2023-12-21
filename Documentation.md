@@ -9,7 +9,7 @@ Para implementar los modelos en la aplicación web que es capaz de servir de her
 
 ## Asignación entidad territorial
 
-Tanto para asignar a que cluster pertenece la parcela asignada, asi como para modelizar la producción, es necesario asignar una zona de influencia a la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de las parcelas empleadas para modelizar (Figure 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
+Tanto para la asignación de cluster, asi como para modelizar la producción, es necesario saber a que zona de influencia pertenece la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de la localización de las parcelas empleadas para modelizar (Figure 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
 
 <figure>
   <img
@@ -17,13 +17,13 @@ Tanto para asignar a que cluster pertenece la parcela asignada, asi como para mo
     alt="voronoi"
     >
   <figcaption>
-    Figure 1. Voronoi polygons of the area of influence of the study. Green area is the distribution range zone delimited by Caudullo et al. (2017).
+    Figure 1. Voronoi polygons of the area of influence of the study. Green area is the distribution range zone of *Pinus pinasteer* delimited by Caudullo et al. (2017).
   </figcaption>
 </figure>
 
 ## Modelo asignación de cluster
 
-Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se ajustó un modelo de asignación. Para construir este modelo se empleó el algorítmo de machine learning XGBoost, que consiguió una precisión del 90% y cuyas importancias de las variables en forma de SHAP values se encuentran en la Figura 2. Una vez que se asigna un cluster se le aplia el modelo de estimación de la producción correspondiente.
+Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se construyó un modelo de clasificación empleando el algorítmo de machine learning XGBoost, que obtuvo una precisión del 90% en los datos de test. Analizando brevemente las variables que fueron más importantes en el modelo anteriormente mencionado mediante los SHAP values que se encuentran en la Figura 2. En esta figura se puede observar como las variables que más influyen en el modelo de clasificaciónfueron las variables relativas a los métodos de extracción (MCM y TNM), seguidas de las variables dasométricas (DBH y HT) y en menor medida las variables de localización y las de las pastas estimulants empleadas (ETH y ASF). Una vez que se asigna un cluster se le aplica el modelo de estimación de la producción correspondiente.
 
 <figure>
   <img
