@@ -1,6 +1,6 @@
 # RESIM
 
-RESIM se trata de una aplicación interactiva que es capaz de servir de herramienta accesible a cualquier usuario. En ella se debe de introducir la localización de una parcela, las variables dasométricas, el método de extracción y la pasta estimulante para obtener el valor esperado de la produción de resina. Una vez se introducen estos valores se le asigna la pertenencia a uno de los cluster y se modeliza la producción en función a las variables introducidas y al modelo asignado.
+RESIM se trata de una aplicación interactiva que es capaz de servir de herramienta accesible a cualquier usuario. En ella se debe de introducir la localización de una parcela, las variables dasométricas, el método de extracción y la pasta estimulante para obtener el valor esperado de la produción de resina. Una vez se introducen estos valores se le asigna la pertenencia a uno de los cluster y se modeliza la producción en función a las variables introducidas y del modelo asignado.
 
 Para implementar los modelos en la aplicación web fue necesario realizar las siguientes acciones:
 - Asignación entidad territorial
@@ -9,7 +9,7 @@ Para implementar los modelos en la aplicación web fue necesario realizar las si
 
 ## Asignación entidad territorial
 
-Tanto para la asignación de cluster, asi como para modelizar la producción, es necesario saber a que zona de influencia pertenece la parcela indicada. Para ello se trazó un plano de influencia calculando los polígonos de Voronoi a partir de la localización de las parcelas empleadas para modelizar (Figure 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
+Tanto para la asignación de cluster, asi como para modelizar la producción, es necesario saber a que zona de influencia pertenece la parcela indicada. Para ello se estableció las zonas de influencia calculando los polígonos de Voronoi a partir de la localización de las parcelas empleadas para modelizar (se puede consultar dichas zonas en la Figura 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
 
 <figure>
   <img
