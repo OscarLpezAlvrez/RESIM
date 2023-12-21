@@ -23,7 +23,7 @@ Tanto para la asignación de cluster, asi como para modelizar la producción, es
 
 ## Modelo asignación de cluster
 
-Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se construyó un modelo de clasificación empleando el algorítmo de machine learning XGBoost, que obtuvo una precisión del 90% en los datos de test. Analizando brevemente las variables que fueron más importantes en el modelo anteriormente mencionado mediante los SHAP values que se encuentran en la Figura 2. En esta figura se puede observar como las variables que más influyen en el modelo de clasificaciónfueron las variables relativas a los métodos de extracción (MCM y TNM), seguidas de las variables dasométricas (DBH y HT) y en menor medida las variables de localización y las de las pastas estimulants empleadas (ETH y ASF). Una vez que se asigna un cluster se le aplica el modelo de estimación de la producción correspondiente.
+Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se construyó un modelo de clasificación empleando el algorítmo XGBoost, que obtuvo una precisión del 90% en los datos de test. Analizando brevemente las variables que fueron más importantes en el modelo anteriormente mencionado mediante los SHAP values que se encuentran en la Figura 2. En esta figura se puede observar como las variables que más influyen en el modelo de clasificaciónfueron las variables relativas a los métodos de extracción (MCM y TNM), seguidas de las variables dasométricas (DBH y HT) y en menor medida las variables de localización y las de las pastas estimulants empleadas (ETH y ASF). Una vez que se asigna un cluster se le aplica el modelo de estimación de la producción correspondiente.
 
 <figure>
   <img
@@ -36,7 +36,7 @@ Una vez se asigna la zona de influencia, se debe de establecer a que cluster per
 
 ## Implementación informática
 
-En la Figura 3 se pude obserevar el diagrama de funcionamiento de la apliación web. Para construirla se empleó un servidor Shiny basado en el lenguaje de R.
+Tras asignar a que cluster pernecen los datos informáticos se realizó la implementación informática de la aplicación. En la Figura 3 se puede obserevar el diagrama de funcionamiento de la apliación web. Para construirla se empleó un servidor Shiny basado en el lenguaje de R en el que se implimentaron los diferentes modelos (clasificación + predicción).
 
 <figure>
   <img
@@ -47,7 +47,7 @@ En la Figura 3 se pude obserevar el diagrama de funcionamiento de la apliación 
   </figcaption>
 </figure>
 
-En la Figura 4 se puede ver la portada 
+En la Figura 4 se puede ver una captura de la página principal de la aplicación. Esta posee un visor en el que seleccionar la parcela, un selector con los métodos y pastas y una caja en la que ir introduciendo los diferente datos dasométricos de los árboles de la parcela. Estos resultados se pueden visualizar en pantalla, imprimir o exportar a csv.
 
 <figure>
   <img
