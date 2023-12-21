@@ -1,11 +1,11 @@
-# RESIM
+#RESIM
 
-En este repositorio se encuentra el proceso llevado a cabo para implementar la metodología de estimación de resina bietápica en la aplicación web [RESIM](http://resim.proepla.com). Se trata de una aplicación accesible de forma libre y que permite a cualquire usuario hacer uso de ella.
+This repository contains the process used to implement the two-stage resin estimation methodology in the web application [RESIM](http://resim.proepla.com). The application is freely accessible to all users.
 
-## Documentos
+##Documents
 
-- [Documentation](Documentation.md): archivo donde se dtallan los procesos llevados a cabo para implementar los modelos de producción de resina desarrollados en una aplicación web.
+[Documentation](Documentation.md): is a file that details the processes used to implement the resin production models in the web application.
 
-## Financiación
+## Funding
 
-Esta actividad fue financiada a traves del grupo operativo GO ACREMA - Adaptación de la actividad resinera a masas de pino con fines productores de madera, ha recibido para su proyecto de innovación una subvención de 559.127,30 €. El importe del proyecto es cofinanciado al 80% por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER) y al 20% por fondos de la Administración General del Estado (AGE), tal como se establece en el Real Decreto 169/2018, de 23 de marzo.
+The operational group GO ACREMA funded this activity, which aims to adapt resin activity to pine stands for timber production purposes. The innovation project received a grant of €559,127.30, with 80% co-financed by the European Agricultural Fund for Rural Development (EAFRD) and 20% by funds from the General State Administration (AGE), as established in Royal Decree 169/2018, of 23 March.
