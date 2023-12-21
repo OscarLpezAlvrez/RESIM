@@ -1,15 +1,15 @@
 # RESIM
 
-RESIM se trata de una aplicación interactiva que es capaz de servir de herramienta accesible a cualquier usuario. En ella se debe de introducir la localización de una parcela, las variables dasométricas, el método de extracción y la pasta estimulante para obtener el valor esperado de la produción de resina. Una vez se introducen estos valores se le asigna la pertenencia a uno de los cluster y se modeliza la producción en función a las variables introducidas y del modelo asignado.
+RESIM is an interactive application that serves as a user-friendly tool. To obtain the expected value of resin production, the user must enter the plot location, dasometric variables, extraction method, and stimulant paste. The entered values are then assigned to a cluster and used to model the resin production based on the assigned model and entered variables.
 
-Para implementar los modelos en la aplicación web fue necesario realizar las siguientes acciones:
-- Asignación entidad territorial
-- Modelo de asignación de cluster
-- Implementación informática
+To implement the models in the web application, the following actions were necessary: 
+- Assigning territorial entities
+- Cluster assignment model
+- Informatic implementation.
 
-## Asignación entidad territorial
+## Assigning territorial entities
 
-Tanto para la asignación de cluster, asi como para modelizar la producción, es necesario saber a que zona de influencia pertenece la parcela indicada. Para ello se estableció las zonas de influencia calculando los polígonos de Voronoi a partir de la localización de las parcelas empleadas para modelizar (se puede consultar dichas zonas en la Figura 1). Por lo tanto, cada vez que se seleciona una ubiación se le asigna una zona de influencia en función de su pertencia a uno o a otro polígono.
+Territorial entity assignment is necessary for both cluster assignment and production modelling, as it determines the zone of influence for the indicated parcel. The Voronoi polygons were used to establish the zones of influence based on the location of the plots used for modelling. Figure 1 shows these zones. Each location is assigned a zone of influence depending on which polygon it belongs to.
 
 <figure>
   <img
@@ -21,9 +21,9 @@ Tanto para la asignación de cluster, asi como para modelizar la producción, es
   </figcaption>
 </figure>
 
-## Modelo asignación de cluster
+## Cluster assignment model
 
-Una vez se asigna la zona de influencia, se debe de establecer a que cluster pertenece de acuerdo a las variables de entrada. Para ello se construyó un modelo de clasificación empleando el algorítmo XGBoost, que obtuvo una precisión del 90% en los datos de test. Analizando brevemente las variables que fueron más importantes en el modelo anteriormente mencionado mediante los SHAP values que se encuentran en la Figura 2. En esta figura se puede observar como las variables que más influyen en el modelo de clasificaciónfueron las variables relativas a los métodos de extracción (MCM y TNM), seguidas de las variables dasométricas (DBH y HT) y en menor medida las variables de localización y las de las pastas estimulants empleadas (ETH y ASF). Una vez que se asigna un cluster se le aplica el modelo de estimación de la producción correspondiente.
+Once the zone of influence has been assigned, it must be determined to which cluster it belongs according to the input variables. To achieve this, an XGBoost algorithm classification model was used, which obtained an accuracy of 90% on the test data. The variables that were most important in the model were analysed using SHAP values, as shown in Figure 2. The figure illustrates that the variables with the greatest impact on the classification model were those related to the extraction methods (MCM and TNM), followed by the dasometric variables (DBH and HT), and to a lesser extent, the location variables and those of the stimulant pastes used (ETH and ASF). The production estimation model is applied to the assigned cluster.
 
 <figure>
   <img
@@ -34,9 +34,9 @@ Una vez se asigna la zona de influencia, se debe de establecer a que cluster per
   </figcaption>
 </figure>
 
-## Implementación informática
+## Informatic implementation
 
-Tras asignar a que cluster pernecen los datos informáticos se realizó la implementación informática de la aplicación. En la Figura 3 se puede obserevar el diagrama de funcionamiento de la apliación web. Para construirla se empleó un servidor Shiny basado en el lenguaje de R en el que se implimentaron los diferentes modelos (clasificación + predicción).
+Figure 3 displays the operating diagram of the web application. After determining the appropriate cluster for the computer data, the application was implemented using a Shiny server based on the R language to create the different models for classification and prediction.
 
 <figure>
   <img
@@ -49,7 +49,7 @@ Tras asignar a que cluster pernecen los datos informáticos se realizó la imple
 
 ------------
     
-En la Figura 4 se puede ver una captura de la página principal de la aplicación. Esta posee un visor en el que seleccionar la parcela, un selector con los métodos y pastas y una caja en la que ir introduciendo los diferente datos dasométricos de los árboles de la parcela. Estos resultados se pueden visualizar en pantalla, imprimir o exportar a csv.
+Figure 4 displays the main page of the application. It includes a viewer for selecting the plot, a selector with methods and pastes, and a box for entering the dasometric data of the trees in the plot. The results can be viewed on screen, printed, or exported to CSV.
 
 <figure>
   <img
