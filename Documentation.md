@@ -30,7 +30,7 @@ Once the zone of influence has been assigned, it must be determined to which clu
     src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/f76d7939-595f-4acc-bb9d-0e1b689f9751"
     >
   <figcaption>
-    Figure 2. SHAP values de las variables empleadas en el modelo de clasificación.
+    Figure 2. SHAP values of the variables employed in the classification model.
   </figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Figure 3 displays the operating diagram of the web application. After determinin
     src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/27d1716c-4aab-4910-8016-45cb0e6ea134"
     >
   <figcaption>
-    Figure 3. Diagrama de funcionamiento de la aplicación.
+    Figure 3. Diagram of how the application works.
   </figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Figure 4 displays the main page of the application. It includes a viewer for sel
     src="https://github.com/OscarLpezAlvrez/RESIM/assets/105171851/dae901b9-7c0e-47b4-baa6-20c0565057e7"
     >
   <figcaption>
-    Figure 4. Vista de la aplicación RESIM.
+    Figure 4. View of the RESIM web application.
   </figcaption>
 </figure>
 
